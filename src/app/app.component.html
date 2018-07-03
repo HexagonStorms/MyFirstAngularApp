@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+
+<div class="container-fluid">
+  <div class="row mt-5 text-center">
+    <div class="col">
+      <table class="table">
+        <thead>
+          <th>
+            Name
+          </th>
+          <th>
+            Picture
+          </th>
+          <th>
+            Location
+          </th>
+          <th>
+            Species
+          </th>
+          <th>
+            Occupation
+          </th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let resident of bikiniBottomResidents">
+            <td>{{ resident.name }}</td>
+            <td><img [src]="resident.image"></td>
+            <td>{{ resident.location }}</td>
+            <td>{{ resident.species }}</td>
+            <td>{{ resident.occupation }}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
